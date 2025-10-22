@@ -1,0 +1,218 @@
+/* Simple, cute, high-schooler-friendly CSS */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2a2a2a;
+  background-image: url(Valentines-Phone-wallpaper.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Basic wrappers */
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background: #833769; /* a little darker than body */
+  border-bottom: 1px solid #ffd6ef;
+  color: white;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  padding: 6px 10px;
+  background: #ffffff;
+  border: 1px solid #ffd6ef;
+  border-radius: 12px;
+  color: #2a2a2a;
+}
+
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #4a3b7e;
+  background: #ffffff;
+  padding: 8px 12px;
+  border: 1px solid #e9dbff;
+  border-radius: 12px;
+}
+
+.nav a:hover {
+  background: #ffeafc;
+}
+
+/* Headings and sections */
+h1, h2, h3 {
+  margin: 0 0 8px;
+}
+
+section {
+  margin: 32px 0;
+}
+
+.section-title {
+  text-align: center;
+  background: #4a3b7e;
+  color: white;
+}
+.section-sub {
+  text-align: center;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #ffd6ef;
+  margin: 28px 0;
+}
+
+.inline-list {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+
+/* Simple card */
+.card {
+  background: #ffffff;
+  border: 1px solid #ffe0f2;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+}
+
+/* Hero layout */
+.hero {
+  display: block;
+}
+
+.hero-text {
+  margin-bottom: 14px;
+}
+
+.hero-photo figure {
+  margin: 0;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+figure img {
+  width: 100%;
+}
+
+figure figcaption {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 6px;
+  text-align: center;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  background: #e9dbff;      /* soft lavender */
+  color: #2a2a2a;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #d8c8ff;
+  margin-right: 6px;
+}
+
+.btn.outline {
+  background: #ffffff;
+}
+
+/* Grid: 2 columns on larger screens, 1 on small */
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+@media (min-width: 760px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Utility */
+.muted { color: #666; }
+
+/* Contact form */
+.contact-form fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-form legend {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 10px 0;
+}
+
+.form-row input,
+.form-row textarea {
+  font: inherit;
+  padding: 8px 10px;
+  border: 1px solid #e0d2ff;
+  border-radius: 10px;
+  background: #fffefe;
+}
+
+.form-actions {
+  margin-top: 8px;
+}
+
+/* Footer */
+footer {
+  background: #ffeef9;
+  border-top: 1px solid #ffd6ef;
+  padding: 16px 0;
+  text-align: center;
+  color: #555;
+}
